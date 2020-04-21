@@ -9,4 +9,11 @@ export class AppController {
   getHello(): any {
     return this.appService.getHello();
   }
+
+  @Get('date')
+  getDate(): any {
+    return {
+      now: new Date(),
+    };
+  }
 }
